@@ -47,5 +47,5 @@ ggplot(plot_df, aes(y= n_sym, x = dose, label = sym)) +
         plot.caption = element_text(family = "Roboto", size = 14, color = 'gray20', hjust = 0.5),
         plot.margin = margin(t = 20, b = 20, l = 20, r = 20)) +
   coord_cartesian(clip = 'off')
-ggsave('pictogram.png', width = 13, height = 14.2, dpi = 75)
+ggsave('02-pictogram.png', width = 13, height = 14.2, dpi = 75)
 
