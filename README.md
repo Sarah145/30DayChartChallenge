@@ -11,3 +11,9 @@
   Prompt: pictogram
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day2/02-pictogram.png?raw=true)
+
+- **Day 4:**
+
+  Prompt: magical
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day4/04-magical.gif?raw=true)
