@@ -28,7 +28,7 @@ p <- ggplot(fantasy, aes(x = decade_label, y = n, size = n)) +
             sigma = 4) +
   geom_point(data = fantasy %>% select(-decade_label), aes(x = decade_dummy), 
              col = '#FAF58A', show.legend = F) +
-  scale_x_discrete(breaks = levels(fantasy$decade_label), limits = levels(fantasy$decade_label), expand = c(0,0), labels = unique(fantasy$decade)) +
+  scale_x_discrete(breaks = levels(fantasy$decade_label), limits = levels(fantasy$decade_label), labels = unique(fantasy$decade)) +
   scale_y_continuous(labels = scales::comma) +
   scale_size_area(max_size = 20) +
   labs(x = NULL, y = NULL, title = 'Number of Sci-Fi and Fantasy movies released each decade since 1900\n', 
