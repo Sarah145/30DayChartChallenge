@@ -17,3 +17,9 @@
   Prompt: magical
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day4/04-magical.gif?raw=true)
+
+- **Day 5:**
+
+  Prompt: slope
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day5/05-dlope.png?raw=true)
