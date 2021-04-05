@@ -22,4 +22,4 @@
 
   Prompt: slope
 
-  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day5/05-dlope.png?raw=true)
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day5/05-slope.png?raw=true)
