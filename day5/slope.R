@@ -26,7 +26,7 @@ ggplot(steps, aes(x = year, y = mean_steps)) +
   geom_point(col = 'gray20', size = 14, pch = 16, show.legend = F) +
   geom_point(col = 'white', size = 11, pch = 16, show.legend = F) +
   geom_point(aes(col = as.factor(year)), size = 9, show.legend = F) +
-  labs(x = NULL, y = NULL, title = title) +
+  labs(x = NULL, y = NULL, title = title, caption = '\n\nData: exported from Health app on my phone | @sarahe145 | #30DayChartChallenge') +
   scale_x_continuous(breaks = seq(2019, 2021)) +
   scale_y_continuous(labels = scales::comma, breaks = seq(2500, 6000, 500), limits = c(2500, 5500)) +
   scale_color_manual(values = PNWColors::pnw_palette('Bay', 3)) +
@@ -36,6 +36,7 @@ ggplot(steps, aes(x = year, y = mean_steps)) +
         axis.text = element_text(color = 'black', size = 21),
         plot.title = element_textbox(hjust = 0.5),
         plot.title.position = 'plot',
-        plot.margin = margin(20,20,20,20))
+        plot.margin = margin(20,20,20,20),
+        plot.caption = element_text(hjust = 0.5, size = 12))
 
 ggsave('05-slope.png', width = 12, height = 10, dpi = 100)
