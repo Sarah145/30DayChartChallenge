@@ -23,3 +23,9 @@
   Prompt: slope
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day5/05-slope.png?raw=true)
+
+- **Day 6:**
+
+  Prompt: experimental
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day6/06-experimental.png?raw=true)
