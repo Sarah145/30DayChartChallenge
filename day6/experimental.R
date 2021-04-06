@@ -6,6 +6,7 @@ options(scipen=999)
 sysfonts::font_add_google('Walter Turncoat')
 sysfonts::font_add_google('Montserrat')
 showtext::showtext_auto()
+showtext::showtext_opts(dpi = 320)
 
 data <- readr::read_delim('http://www.nxn.se/single-cell-studies/data.tsv', delim = '\t')
 
@@ -19,6 +20,7 @@ mean_df <- data %>% group_by(year) %>% summarise(year_mean = mean(`Reported cell
 mean_df$date <- date(paste0(mean_df$year, '-01-01'))
 
 highlight_df <- data %>% filter(DOI %in% c('10.1126/science.aba7721', '10.1073/pnas.97.11.6144'))
+
 ggplot(data, aes(x = date, y = `Reported cells total`)) +
   geom_point(col = '#FFB7C3', size = 1.5, alpha = 0.9) +
   geom_point(data = highlight_df, size = 5.5, col = '#C42847') +
@@ -48,7 +50,7 @@ ggplot(data, aes(x = date, y = `Reported cells total`)) +
         axis.text.y = element_text(color = 'white', size = 12),
         axis.ticks.x = element_line(color = 'gray50'),
         axis.title = element_text(color = 'white'),
-        plot.title = element_text(color = 'white', size = 24),
+        plot.title = element_text(color = 'white', size = 26),
         plot.margin = margin(10, 30, 10, 10),
         plot.caption = element_text(family = 'Montserrat', color = 'gray90', size = 12, hjust = 1),
         panel.grid.minor = element_blank(),
@@ -57,4 +59,5 @@ ggplot(data, aes(x = date, y = `Reported cells total`)) +
         plot.background = element_rect(color = '#333333', fill = '#333333')) +
   coord_cartesian(clip = 'off')
 
-ggsave('06-experimental.png', width = 14, height = 8, dpi = 100)
+ggsave("06-experimental.png", dpi = 320, width = 14, height = 8)
+
