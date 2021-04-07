@@ -29,3 +29,9 @@
   Prompt: experimental
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day6/06-experimental.png?raw=true)
+
+- **Day 7:**
+
+  Prompt: physical
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day7/07-physical.png?raw=true)
