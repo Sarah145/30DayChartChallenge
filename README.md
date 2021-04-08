@@ -35,3 +35,7 @@
   Prompt: physical
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day7/07-physical.png?raw=true)
+
+- **Day 8:**
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day8/08-animal.png?raw=true)
