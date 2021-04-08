@@ -45,9 +45,9 @@ ggplot(ratings, aes(x = num_rating)) +
   theme_minimal(base_size = 23) +
   theme(plot.title = element_text(family = 'Playfair Display', hjust = 0.5),
         plot.title.position = 'plot',
-        axis.title = element_text(family = 'Playfair Display', size = 22),
+        axis.title = element_text(family = 'Playfair Display', size = 23),
         axis.text = element_text(family = 'Montserrat', color = '#AD343E', face = 'bold'),
-        plot.caption = element_text(family = 'Playfair Display', size =13),
+        plot.caption = element_text(family = 'Playfair Display', size =15, hjust = 0.5),
         plot.margin = margin(20,20,20,20)) +
   coord_cartesian(clip = 'off')
 
