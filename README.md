@@ -39,3 +39,5 @@
 - **Day 8:**
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day8/08-animal.png?raw=true)
+
+  
