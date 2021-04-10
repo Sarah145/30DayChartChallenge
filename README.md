@@ -38,6 +38,14 @@
 
 - **Day 8:**
 
+  Prompt: animal
+
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day8/08-animal.png?raw=true)
 
-  
+- **Day 10:**
+
+  Prompt: abstract
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day10/10-abstract.png?raw=true)
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day10/10-abstract1.png?raw=true)
