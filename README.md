@@ -49,3 +49,9 @@
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day10/10-abstract.png?raw=true)
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day10/10-abstract1.png?raw=true)
+  
+- **Day 12:**
+
+  Prompt: strips
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day12/12-strips.png?raw=true)
