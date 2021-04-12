@@ -55,3 +55,4 @@
   Prompt: strips
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day12/12-strips.png?raw=true)
+

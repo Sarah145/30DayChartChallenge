@@ -17,4 +17,4 @@ ggplot(df, aes(x = 0, y = col_share, fill = col_hex)) +
         plot.margin = margin(0,0,0,0)) +
   coord_flip()
 
-ggsave('12-strips.png', dpi = 800)
+ggsave('12-strips.png', dpi = 800, width = 10, height = 6)
