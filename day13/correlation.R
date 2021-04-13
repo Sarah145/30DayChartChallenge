@@ -43,9 +43,9 @@ p <- ggplot(df, aes(x = Minimum.wage, y = PhD.income)) +
   scale_colour_manual(values = c('#A9E2F5', '#CAA6DB')) +
   scale_fill_manual(values = c('#CAA6DB', '#A9E2F5')) +
   labs(title = 'Relationship between minimum wage and PhD income',
-       subtitle = str_wrap('This plot shows the minimum wage and average monthly income for PhD students in several European countries. In countries above the diagonal line, PhD students tend to earn more than the minimum wage. Ireland is the only country where PhD students (on average) earn less than the minimum wage.', width = 80),
+       subtitle = str_wrap('This plot shows the minimum wage and monthly income for PhD students in several European countries. In countries above the diagonal line, PhD students tend to earn more than the minimum wage. Ireland is the only country where PhD students tend to earn less than the minimum wage.', width = 80),
        x = '\nMinimum wage', y = 'PhD income\n',
-       caption = 'Data source: sinaahmadi.github.io | @sarahe145 | #30DayChartChallenge') +
+       caption = '@sarahe145 | #30DayChartChallenge\nData source: sinaahmadi.github.io/posts/phd-in-ireland-vs-europe-a-comparative-overview.html') +
   theme_minimal() +
   theme(panel.grid = element_blank(),
         axis.ticks = element_line(),
@@ -53,7 +53,7 @@ p <- ggplot(df, aes(x = Minimum.wage, y = PhD.income)) +
         axis.title = element_text(colour = '#582C4D', size = 24, family = 'Montserrat', face = 'bold'),
         plot.title = element_text(colour = '#582C4D', family = 'Bebas Neue', size = 30),
         plot.title.position = 'plot',
-        plot.caption = element_text(size = 14, margin = margin(t = 20), hjust = 0.5, family = 'Montserrat', colour = '#582C4D'),
+        plot.caption = element_text(size = 14, margin = margin(t = 20), hjust = 1, family = 'Montserrat', colour = '#582C4D'),
         plot.subtitle = element_text(size = 19, margin = margin(t = 20, b = 30), family = 'Montserrat'),
         plot.background = element_rect(colour = '#FDFAF3', fill = '#FDFAF3'),
         panel.background = element_rect(colour = '#FDFAF3', fill = '#FDFAF3'),
