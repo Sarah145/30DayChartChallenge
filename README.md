@@ -56,3 +56,8 @@
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day12/12-strips.png?raw=true)
 
+- **Day 13:**
+
+  Prompt: correlation
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day13/13-correlation.png?raw=true)
