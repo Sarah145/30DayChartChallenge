@@ -61,3 +61,9 @@
   Prompt: correlation
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day13/13-correlation.png?raw=true)
+
+- **Day 16:**
+
+  Prompt: tree
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/day16/16-tree.png?raw=true)
