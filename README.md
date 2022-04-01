@@ -1,5 +1,17 @@
 ## 30 Day Chart Challenge
 
+### 2022
+
+- **Day 1**
+
+  Prompt: part-to-whole
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/2022/day1/01-part-to-whole.png?raw=true)
+
+----------
+
+### 2021
+
 - **Day 1** 
 
   Prompt: part-to-whole
