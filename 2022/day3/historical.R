@@ -65,11 +65,11 @@ text_df <- census_df %>% filter(Province != 'State') %>%
 # make list of plots
 plot_list <- list()
 for(i in unique(census_df$Year)){
-  #p1 <- 
-    ggplot() +
+  p1 <- ggplot() +
     geom_polygon(data = spdf_census %>% filter(Year == i), aes( x = long, y = lat, group = group, fill = Percent), color="white") +
     geom_text(data = text_df %>% filter(Year == i), aes(x=x, y=y, label = paste0(id,'\n',paste0(Percent, '%'))), size = 8) +
-    scale_fill_gradientn(colours = paletteer_c('grDevices::Greens', 10, direction = -1), breaks = seq(0,100, 20), limits = c(0,100),  name = NULL) +
+    scale_fill_stepsn(colours = paletteer_c('grDevices::Greens', 10, direction = -1), breaks = seq(0,100, 20), limits = c(0,100), labels = function(x) paste0(x, '%'), name = NULL) +
+    guides(fill = guide_bins(show.limits = T)) +
     labs(title = 'Irish speakers as a percentage of the population',
          subtitle = paste0('Year: ', i, '<br>'),) +
     theme_void(base_size = 20) +
@@ -87,7 +87,7 @@ for(i in unique(census_df$Year)){
     geom_point(pch=21, size = 6) +
     scale_y_continuous(limits = c(10,50), breaks = seq(10,50,20), labels = function(x) paste0(x, '%')) +
     scale_x_continuous(breaks = census_df %>% filter(as.numeric(Year) <= as.numeric(i)) %>% pull(Year) %>% unique() %>% as.numeric(), limits = c(1861, 2016)) + 
-    scale_fill_stepsn(colours = paletteer_c('grDevices::Greens', 10, direction = -1), breaks = seq(0,100,20), limits = c(-0.1,100.1), labels = function(x) paste0(x, '%'), name = NULL) +
+    scale_fill_stepsn(colours = paletteer_c('grDevices::Greens', 10, direction = -1), breaks = seq(0,100,20), limits = c(0,100), labels = function(x) paste0(x, '%'), name = NULL) +
     labs(caption = '<br>Data: data.cso.ie | @sarahe145 | #30DayChartChallenge') +
     theme_minimal(base_size = 20) +
     theme(legend.position = 'none',
@@ -105,5 +105,5 @@ for(i in unique(census_df$Year)){
 # combine plots into a gif
 saveGIF({
   for (i in plot_list)plot(i)},
-  movie.name = 'historical.gif',
+  movie.name = '03-historical.gif',
   ani.width = 700, ani.height = 980)

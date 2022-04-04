@@ -8,6 +8,12 @@
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/2022/day1/01-part-to-whole.png?raw=true)
 
+- **Day 3** 
+
+  Prompt : historical
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/2022/day3/03-historical.gif?raw=true)
+
 ----------
 
 ### 2021
