@@ -11,34 +11,6 @@ library(animation)
 census_df <- cso_get_data('EA039') %>% filter(Statistic == 'Irish speakers as a percentage of total')
 census_df <- census_df %>% pivot_longer(3:ncol(census_df), names_to = 'Year', values_to = 'Percent')
 
-# ggplot(d %>% filter(Province == 'State'), aes(x = Percent, y = as.numeric(Year))) + 
-#   geom_col(aes(x = 100), fill = '#ffffff', orientation = 'y', col = '#333333', size = 0.2, width = 0.5) + 
-#   geom_col(orientation = 'y', fill = '#44ab5c', size = 0.2, width = 3) + 
-#   geom_point(col = '#44ab5c',  size = 9) + 
-#   geom_text(aes(x = Percent, label = Percent), col = '#ffffff', fontface = 'bold', size = 5) +
-#   scale_y_reverse(breaks = as.numeric(unique(d$Year)), expand = c(0,0)) +
-#   scale_x_continuous(expand = c(0,0), labels = function(x) paste0(x, '%'), limits = c(0,105)) +
-#   labs(title = '<span style=color:#44ab5c>**Irish speakers**</span> as a percentage of the Irish population (1861-2016)<br>',
-#        caption = '<br>Data: data.cso.ie | @sarahe145 | #30DayChartChallenge') +
-#   theme_minimal(base_size = 20) +
-#   theme(axis.text = element_text(colour = '#000000'),
-#         axis.title = element_blank(),
-#         axis.ticks = element_line(colour = '#333333'),
-#         strip.text = element_blank(),
-#         strip.background = element_blank(),
-#         plot.title = element_markdown(size = 20),
-#         plot.title.position = 'plot',
-#         plot.caption = element_markdown(size = 13, hjust = 1),
-#         panel.grid = element_blank(),
-#         plot.margin = margin(10,5,10,10)
-#         ) +
-#   coord_cartesian(clip = 'off')
-# 
-# ggsave('~/Documents/30DayChartChallenge/2022/day3/historical.png', width = 9.75, height = 10, bg = 'white')
-# 
-# ggplot(d %>% filter(Province != 'State'), aes(x = as.numeric(Year), y = Percent, fill = Province)) +
-#   geom_col()
-
 # read in shapefiles for province boundaries
 # downloaded from here: https://www.cso.ie/en/census/census2011boundaryfiles/
 boundaries <- readOGR( 
