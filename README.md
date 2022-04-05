@@ -10,9 +10,15 @@
 
 - **Day 3** 
 
-  Prompt : historical
+  Prompt: historical
 
   ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/2022/day3/03-historical.gif?raw=true)
+
+- **Day 4**
+
+  Prompt: flora
+
+  ![](https://github.com/Sarah145/30DayChartChallenge/blob/master/2022/day4/04-flora.png?raw=true)
 
 ----------
 
